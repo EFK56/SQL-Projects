@@ -1,0 +1,25 @@
+CREATE TABLE price_list (id INTEGER PRIMARY KEY, name TEXT, Category TEXT, Description TEXT, Cost INTEGER, Retail INTEGER, quantity
+INTEGER);
+INSERT INTO price_list VALUES (1, "Amethyst", "Geode", "Large Purple", 8.10, 21.00, 3);
+INSERT INTO price_list VALUES (2, "Rosemary", "Herb", "Dried 1 oz", 3.10, 6.45, 6);
+INSERT INTO price_list VALUES (3, "Black Salt", "Spice", "3 oz Bag", 2.05, 6.50, 6);
+INSERT INTO price_list VALUES (4, "Cinnamon", "Spice", "1 oz Jar", 2.15,4.90, 6);
+INSERT INTO price_list VALUES (5, "Quartz", "Geode", "Large White", 8.20, 21.00, 2);
+INSERT INTO price_list VALUES (6, "Quartz", "Crystal", "Large Point",7.15, 12.50, 6);
+INSERT INTO price_list VALUES (7, "Fluorite", "Crystal", "Small Green", 1.36, 4.25, 8);
+INSERT INTO price_list VALUES (8, "Mugwort", "Herb", "1 oz Bag", 5.80, 17.90, 4);
+INSERT INTO price_list VALUES (9, "Thyme Leaves", "Herb", "1 oz Bag", 5.30, 9.10, 3);
+INSERT INTO price_list VALUES (10, "Hematite", "Crystal", "Small Sphere", 3.45, 8.10, 5);
+INSERT INTO price_list VALUES (11, "Amethyst", "Crystal", "Small Sphere", 4.15, 9.30, 2);
+INSERT INTO price_list VALUES (12, "Jasper", "Crystal", "Large Point Red", 6.25, 15.75, 7);
+INSERT INTO price_list VALUES (13, "Amethyst", "Geode", "Small Purple", 4.15, 12.50, 3);
+INSERT INTO price_list VALUES (14, "White Sea Salt", "spice", "6 oz Bag", 3.25, 6.15, 12);
+INSERT INTO price_list VALUES (15, "4in Candle", "Candle", "White", .90, 2.15, 12);
+INSERT INTO price_list VALUES (16, "4in Candle", "Candle", "Red", .90, 2.15, 8);
+INSERT INTO price_list VALUES (17, "4in Candle", "Candle", "Black", .90, 2.15, 10);
+INSERT INTO price_list VALUES (18, "4in Candle", "Candle", "Green", .90, 2.15, 8);
+INSERT INTO price_list VALUES (19, "4in Candle", "Candle", "Blue", .90, 2.15, 9);
+INSERT INTO price_list VALUES (20, "4in Candle", "Candle", "Orange", .90, 2.15, 13);
+SELECT * FROM price_list;
+SELECT SUM(Quantity) FROM price_list;
+SELECT * FROM price_list ORDER BY "category";
